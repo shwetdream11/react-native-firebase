@@ -1767,7 +1767,7 @@ declare module 'react-native-firebase' {
         /** Creates a standard dynamic link. */
         createDynamicLink(dynamicLink: DynamicLink): Promise<string>;
         /** Creates a short dynamic link. */
-        createShortDynamicLink(type: 'SHORT' | 'UNGUESSABLE'): Promise<string>;
+        createShortDynamicLink(dynamicLink: DynamicLink, type: 'SHORT' | 'UNGUESSABLE'): Promise<string>;
         /**
          * Returns the URL that the app has been launched from. If the app was
          * not launched from a URL the return value will be null.
